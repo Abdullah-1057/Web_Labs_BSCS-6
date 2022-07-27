@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="JS/custom.js" type="text/js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            $("p:even").css("background-color", "blue");
+
+        });
+
+
+    </script>
+    <script>
+        function appendText() {
+            var txt1 = "<p>NewText.</p>";        // Create text with HTML
+
+
+            $("p:last").append(txt1);   // Append new elements
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({ left: '250px',width:'200px',height:'200px' });
+            });
+        });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $("mybtn").click(function(){
+        $("p").text(function(n){
+            if (n = 4) {
+                $("p:n").text("5");
+                }
+        });
+      });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="myPara">
+        <p>This is pragraph 0</p>
+        <p>This is pragraph 1</p>
+        <p>This is pragraph 2</p>
+        <p>This is pragraph 3</p>
+        <p>This is pragraph 4</p>
+
+    </div>
+    <p>This is pragraph 5</p>
+    <p>This is pragraph 6</p>
+    <p>This is pragraph 7</p>
+    <p>This is pragraph 8</p>
+    <p>This is pragraph 9</p>
+
+    <button class="mybtn" onclick="appendText()">Append text</button>
+    <br>
+    <br>
+    <br>
+
+
+    <button>Start Animation</button>
+
+    <button >Set text </button>
+
+<div style="background:black;height:100px;width:100px;position:absolute;margin: 20px;"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container mt-3">
+        <h2>Contact US</h2>
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3">
+                <label for="FirstName">First Name:</label>
+                <input type="text" class="form-control" id="FirstName" placeholder="First Name" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="LastName">Last Name:</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Last Name" name="email">
+            </div>
+
+            <div class="mb-3 mt-3">
+                <label for="FatherName">Father Name:</label>
+                <input type="text" class="form-control" id="FatherName" placeholder="Father Name" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="FatherJob">Father Job:</label>
+                <input type="text" class="form-control" id="FatherJob" placeholder="Father Job" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="GurdianName">Gurdian Name:</label>
+                <input type="text" class="form-control" id="GurdianName" placeholder="Gurdian Name" name="email">
+            </div>
+
+
+
+
+            <div class="mb-3 mt-3">
+                <label for="Contact">Contact number:</label>
+                <input type="text" class="form-control" id="Contact" placeholder="Enter number" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <ul class="list-group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+    </ul>
+
+</body>
+
+</html>

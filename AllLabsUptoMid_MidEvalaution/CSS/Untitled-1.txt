@@ -1,0 +1,12 @@
+
+use cdn speed increase of bootstrap 
+keep the file there and link headerr
+
+color primary == blue
+
+class row 
+class colum-sm-9
+bg class
+
+semantic elemnts achine understandable elements
+chrolar run data fetching of websites

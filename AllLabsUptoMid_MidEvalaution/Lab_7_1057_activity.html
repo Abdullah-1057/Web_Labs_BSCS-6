@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="JS/custom.js" type="text/js"></script>
+    <title>Document</title>
+    <script>
+       $(function(){
+       
+        $('h1').click(function () {
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            alert(time);
+          
+        });
+        $('img').dblclick(function () {
+            $('img').attr('src','images/bulb-on.png');
+          
+        });
+        $('#FormButton').click(function () {
+            var form1 = $('#TextForm1').val();
+            var form2 = $('#TextForm2').val();
+            
+            $('#TextForm3').val(form1+form2);
+            
+         });
+        
+  });
+  $(function () {
+    $('#userName').keyup(function () {
+       var userName =  $('#userName').val();
+       userName = userName.toUpperCase();
+       $('#userName').val(userName);
+       //alert(userName);
+    });
+      $('#turnOnOff').dblclick(function () {
+         var currentValue = $('#turnOnOff').text();
+         if(currentValue == 'Turn ON'){
+             $('img').attr('src','images/bulb-on.png');
+             $('#turnOnOff').text('Turn OFF')
+         }
+         else{
+            $('img').attr('src','images/bulb-off.png');
+             $('#turnOnOff').text('Turn ON')
+         }
+
+
+      });
+      $('h4').click(function(){
+        $('h4').css('color', 'red');
+        $('h4').css('font-family', 'Arial');
+    });
+  });
+   
+    </script>
+</head>
+<body>
+   
+    <h1>
+        BSCS-6 19-NTU-CS-1057
+    </h1>
+    <br>
+    <br>
+    <input type="text" name="" id="TextForm1">
+    <input type="text" name="" id="TextForm2">
+    <br>
+    <input type="text" name="" id="TextForm3">
+    <br>
+    <button id="FormButton" type="button">Enter</button>
+
+    <br>
+    <br>
+    <img src="images/bulb-off.png" alt="">
+    <button id="turnOnOff" type="button">Turn ON</button>
+    <input type="text" name="" id="userName">
+    <h4>BSCS</h4>
+    <br>
+    <input type="text" name="" id="InputDate">
+    <br>
+    <input type="text" name="" id="Date1">
+    <input type="text" name="" id="Date2">
+    <input type="text" name="" id="Date3">
+    <br>
+    <button id="FormButton" type="button">Enter</button>
+
+
+</body>
+</html>
